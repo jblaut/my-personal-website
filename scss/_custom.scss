@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/static/blurred-1869401_1920.jpg');
+  background-color: #000;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  color: #fff;
+}
+
+.Modal {
+  padding-top: 150px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .Modal {
+    text-align: right;
+  }
+
+  .Description {
+    margin-left: -30%; 
+  }
+
+  .Header,
+  .Contact {
+    padding-right: 30%;
+  }
+}
+
+.Header {
+  & .cust_photo img {
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255, .6);
+    box-shadow: 1px 1px 5px rgba(255,255,255, .6);
+  }
+
+  & .cust_name {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0,0,0, .9);
+  }
+}
+
+.Description {
+  padding: 0 35px;
+  text-indent: 2em;
+
+  p:before {
+    content: '↠';
+    padding-right: 10px;
+  }
+}
+
+.Description {
+  text-align: left;
+
+  & ul {
+    padding-top: 10px;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & li::before {
+    content: '⚡';
+    padding-right: 10px;
+  }
+}
+
+.Contact .cust_contact-header {
+  margin-top: 45px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0,0,0, .9);
+}
+
+.Contact svg {
+  width: 64px;
+  height: 64px;
+  fill: #707070;
+}
+
+.Contact li {
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+}
+
+li {
+  &.cust_github svg:hover {
+    fill: #6e5494;
+  }
+
+  &.cust_linkedin svg:hover {
+    fill: #0077b5;
+  }
+
+  &.cust_twitter svg:hover {
+    fill: #1da1f2;
+  }
+
+  &.cust_instagram svg:hover {
+    fill: #833ab4;
+  }
+}
